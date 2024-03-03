@@ -1,0 +1,26 @@
+Cookies are small pieces of data stored on the client-side (usually in the user's web browser) by websites to remember 
+information or track user activity across different pages or sessions. They are primarily used to maintain stateful information 
+and personalize user experiences on the web.
+
+Here's a breakdown of key concepts related to cookies:
+
+HTTP Cookies: Cookies are primarily used as HTTP headers. When a web server sends a response to a client (typically a web browser), 
+it can include one or more Set-Cookie headers to instruct the client to store cookies.
+
+Key-Value Pairs: A cookie consists of a key-value pair, where the key represents the name of the cookie, and the value contains 
+the actual data. For example, a cookie named username might have a value of JohnDoe.
+
+Domain and Path: Cookies are associated with a specific domain and path. The domain defines the scope of the cookie, indicating 
+which websites can access it. The path specifies the URL path for which the cookie is valid.
+
+Expiration: Cookies can have an expiration date/time, after which they are automatically deleted by the client. If no expiration 
+is set, cookies are considered session cookies and are deleted when the browser is closed.
+
+Security Flags: Cookies can include security flags such as HttpOnly, Secure, and SameSite to enhance security.
+
+HttpOnly: Prevents client-side JavaScript from accessing the cookie, mitigating certain types of attacks like cross-site 
+scripting (XSS).
+Secure: Specifies that the cookie should only be sent over HTTPS connections, enhancing security by preventing transmission over 
+unencrypted HTTP.
+SameSite: Defines whether the cookie should be restricted to first-party or same-site contexts, reducing the risk of cross-site
+ request forgery (CSRF) attacks.
